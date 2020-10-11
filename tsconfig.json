@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "target": "react",
+    "jsx": "preserve",
+    "allowJs": true,
+    "checkJs": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "noEmitOnError": true,
+    "allowUnreachableCode": false,
+    "paths": {
+      "store/*": [
+        "./src/store/*"
+      ],
+      "assets/*": [
+        "./src/assets/*"
+      ],
+      "helpers/*": [
+        "./src/helpers/*"
+      ],
+      "interfaces/*": [
+        "./src/interfaces/*"
+      ],
+      "components/*": [
+        "./src/components/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "/node_modules/",
+    "**/*.spec.ts"
+  ]
+}

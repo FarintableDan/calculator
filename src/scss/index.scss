@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'Geometria';
+  src: url('../assets/fonts/Geometria.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('../assets/fonts/Geometria-Bold.woff') format('woff');
+  font-weight: 600;
+  font-style: bold;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Geometria', sans-serif;
+}
+
+.wrapper {
+  background: linear-gradient(122.76deg, #FFA2A2 4.09%, #FF7B7B 91.04%), #FFFFFF;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+
+  .container {
+    margin: 0 auto;
+    background: #FFFFFF;
+    backdrop-filter: blur(4px);
+    border-radius: 18px;
+    flex: 0 0 616px;
+    min-height: 876px;
+    padding: 38px 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .calc {
+      background: linear-gradient(155.23deg, #28518E 0%, #3A77D1 100%);
+      box-shadow: 0 82px 158px rgba(0, 0, 0, 0.35), 0 24.7206px 47.6324px rgba(0, 0, 0, 0.228056), 0 10.2677px 19.7841px rgba(0, 0, 0, 0.175), 0 3.71362px 7.1555px rgba(0, 0, 0, 0.121944);
+      border-radius: 18px;
+      padding: 97px 46px 0;
+      flex: 0 0 554px;
+      min-height: 800px;
+      max-width: 554px;
+
+      &__query {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-bottom: 17px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.35);
+      }
+
+      &__result, &__string {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        color: #F2F2F2;
+        word-break: break-all;
+        text-align: right;
+      }
+
+      &__result {
+        font-size: 56px;
+        line-height: 80px;
+        font-weight: 600;
+        margin-top: 25px;
+        min-height: 80px;
+      }
+
+      &__string {
+        min-height: 32px;
+      }
+
+      &__buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 40px 10px 0 10px;
+
+        button {
+          height: 80px;
+          width: 80px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: transparent;
+          border: none;
+          padding: 0;
+          border-radius: 50px;
+          margin-right: 20px;
+          font-family: 'Geometria', sans-serif;
+          margin-bottom: 16px;
+          transition: all 0.2s ease-in;
+          outline: none;
+
+          &:nth-child(4n) {
+            margin-right: 0;
+          }
+
+          &:last-child {
+            background: #FFFFFF;
+
+            span {
+              color: #2B589A;
+            }
+          }
+
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.12);
+          }
+
+          span {
+            color: #F2F2F2;
+            font-weight: 500;
+            font-size: 36px;
+            pointer-events: none;
+          }
+        }
+      }
+    }
+  }
+}
